@@ -34,8 +34,8 @@ public class Ex11_1 {
 		
 		print(list1,list2);
 		
-		for(int i=list2.size()-1;i>=0;i--) {
-			if(list1.contains(list2.get(i)))
+		for(int i=list2.size()-1;i>=0;i--) { //효율성을 위해서 뒤에서 부터 remove 
+			if(list1.contains(list2.get(i)))//앞에서 부터 지우면 요소들을 복사 너무 많이 해야
 				list2.remove(i);
 		}
 		
