@@ -36,7 +36,7 @@ public class Ex11_1 {
 		
 		for(int i=list2.size()-1;i>=0;i--) { //효율성을 위해서 뒤에서 부터 remove 
 			if(list1.contains(list2.get(i)))//앞에서 부터 지우면 요소들을 복사 너무 많이 해야
-				list2.remove(i);
+				list2.remove(i); //수정본2 업데이트 루트를 위한 확인차
 		}
 		
 		print(list1,list2);
